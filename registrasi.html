@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "Styles/beranda.css" type = "text/css">
+    <title> Registrasi </title>
+  </head>
+
+  <body>
+    <div class = "navigate">
+      <ul class = "horizontal">
+        <li><a href = "beranda.html">     Beranda   </a></li>
+        <li><a href = "pemuaian.html">    Pemuaian  </a></li>
+        <li><a href = "jadwal.html">       Jadwal   </a></li>
+        <li><a href = "registrasi.html"> Registrasi </a></li>
+      </ul>
+    </div>
+    <div class = "register">
+      <form>
+        <!-- action="index.html" method="post" -->
+        <table>
+          <tr>
+            <td> Full name :
+              <input
+                class = "fullname"
+                type = "text"
+                size = "20px">
+              <br>
+            </td>
+          </tr>
+          <tr>
+            <td> Username :
+              <input
+                class = "username"
+                type = "text"
+                maxlength = "8">
+                <!-- size="20" -->
+                <!-- placeholder="Username" -->
+              <br>
+            </td>
+          </tr>
+          <tr>
+            <td> Password :
+              <input
+                class = "password"
+                type = "password"
+                maxlength = "16">
+                <!-- placeholder="Password" -->
+              <br> 
+            </td>
+          </tr>
+          <tr>
+            <td> Tanggal Lahir :
+              <input
+                class = "date-box"
+                type = "date"
+                name = "date">
+            </td>
+          </tr>
+          <tr>
+            <td> Jenis Kelamin :
+              <select 
+                class = "gender" 
+                name = "Jenis Kelamin">
+                  <option 
+                    value = "1">
+                    Pria
+                  </option>
+                  <option
+                    value = "2">
+                    Wanita
+                  </option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button 
+                class = "sub-btn" 
+                type = "submit" 
+                name = "button">
+                Submit
+              </button>
+              <button
+                class = "can-btn"
+                type = "reset"
+                name = "button">
+                Cancel
+              </button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
